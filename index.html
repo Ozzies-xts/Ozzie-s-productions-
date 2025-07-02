@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ozzie's Productions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0d0d0d;
+      color: #e0b0ff;
+    }
+    header {
+      background-color: #1a001a;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #330033;
+      padding: 10px;
+    }
+    nav a {
+      color: #e0b0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background-color: #1a001a;
+      color: #999;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ozzie's Productions</h1>
+    <p>Explorando el arte, el deseo y la emoción</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#blog">Blog</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>
+      Ozzie's Productions es un espacio donde la lujuria se explora como una forma
+      de arte y expresión humana. Aquí encontrarás imágenes, textos y reflexiones
+      que buscan despertar los sentidos y cuestionar los límites del deseo.
+    </p>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <p>Muy pronto, podrás disfrutar de una selección curada de arte sensual y evocador.</p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>
+      Artículos, poesía y pensamientos sobre la lujuria, el amor, los pecados y los demonios internos.
+      Pronto disponible.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas o propuestas? Escríbenos a <strong>ozzies@productions.com</strong></p>
+  </section>
+
+  <!-- Audio oculto que se activa con el primer clic -->
+  <audio id="audio" loop hidden>
+    <source src="house-of-asmodeus.mp3" type="audio/mpeg" />
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <footer>
+    <p>&copy; 2025 Ozzie's Productions. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    window.addEventListener(
+      'click',
+      () => {
+        const audio = document.getElementById('audio');
+        if (audio.paused) {
+          audio.play();
+        }
+      },
+      { once: true }
+    );
+  </script>
+</body>
+</html>
